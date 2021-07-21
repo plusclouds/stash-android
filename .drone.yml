@@ -25,6 +25,7 @@ steps:
 trigger:
   branch:
     - master
+    - stable-*
   event:
     - push
     - pull_request
