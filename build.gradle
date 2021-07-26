@@ -60,7 +60,8 @@ ext {
 	daggerVersion = "2.36"
     markwonVersion =  "4.6.2"
     prismVersion = "2.0.0"
-    androidLibraryVersion = "master-SNAPSHOT"
+    //androidLibraryVersion = "master-SNAPSHOT"
+    androidLibraryVersion = "rc-2.7.0-02"
     mockitoVersion = "3.11.0"
     mockkVersion = "1.10.4"
     powermockVersion = "2.0.9"
@@ -129,7 +130,7 @@ android {
         targetSdkVersion 29
 
         // arguments to be passed to functional tests
-        testInstrumentationRunner "com.nextcloud.client.ScreenshotTestRunner"
+        testInstrumentationRunner "com.pluscloudsstash.client.ScreenshotTestRunner"
         testInstrumentationRunnerArgument "TEST_SERVER_URL", "${NC_TEST_SERVER_BASEURL}"
         testInstrumentationRunnerArgument "TEST_SERVER_USERNAME", "${NC_TEST_SERVER_USERNAME}"
         testInstrumentationRunnerArgument "TEST_SERVER_PASSWORD", "${NC_TEST_SERVER_PASSWORD}"
@@ -161,24 +162,24 @@ android {
         productFlavors {
             // used for f-droid
             generic {
-                applicationId 'com.nextcloud.client'
+                applicationId 'com.pluscloudsstash.client'
                 dimension "default"
             }
 
             gplay {
-                applicationId 'com.nextcloud.client'
+                applicationId 'com.pluscloudsstash.client'
                 dimension "default"
             }
 
             versionDev {
-                applicationId "com.nextcloud.android.beta"
+                applicationId "com.pluscloudsstash.client.beta"
                 dimension "default"
                 versionCode 20200129
                 versionName "20200129"
             }
 
             qa {
-                applicationId "com.nextcloud.android.qa"
+                applicationId "com.pluscloudsstash.client.qa"
                 dimension "default"
                 versionCode 1
                 versionName "1"

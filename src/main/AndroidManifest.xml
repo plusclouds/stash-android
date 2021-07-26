@@ -284,7 +284,7 @@
         <!-- to "best before" dates in his fridge. -->
         <provider
             android:name="androidx.work.impl.WorkManagerInitializer"
-            android:authorities=".workmanager-init"
+            android:authorities=".workmanager-init-pluscloudsstash"
             android:exported="false"
             tools:node="remove" />
 
