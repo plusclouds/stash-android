@@ -90,6 +90,7 @@
                 android:textStyle="bold"
                 android:padding="@dimen/standard_padding"
                 android:text="@string/signup_with_provider"
+                android:visibility="gone"
                 app:cornerRadius="@dimen/button_corner_radius" />
         </LinearLayout>
 
@@ -101,6 +102,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_horizontal"
+            android:visibility="gone"
             android:onClick="onHostYourOwnServerClick"
             android:text="@string/host_your_own_server"/>
     </LinearLayout>

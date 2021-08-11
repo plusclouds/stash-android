@@ -98,7 +98,7 @@ public class FirstRunActivity extends BaseActivity implements ViewPager.OnPageCh
         Button providerButton = findViewById(R.id.signup);
         providerButton.setBackgroundColor(getResources().getColor(R.color.primary));
         providerButton.setTextColor(getResources().getColor(R.color.login_text_color));
-        providerButton.setVisibility(isProviderOrOwnInstallationVisible ? View.VISIBLE : View.GONE);
+        //providerButton.setVisibility(isProviderOrOwnInstallationVisible ? View.VISIBLE : View.GONE);
         providerButton.setOnClickListener(v -> {
             Intent authenticatorActivityIntent = new Intent(this, AuthenticatorActivity.class);
             authenticatorActivityIntent.putExtra(AuthenticatorActivity.EXTRA_USE_PROVIDER_AS_WEBLOGIN, true);
@@ -113,7 +113,7 @@ public class FirstRunActivity extends BaseActivity implements ViewPager.OnPageCh
 
         TextView hostOwnServerTextView = findViewById(R.id.host_own_server);
         hostOwnServerTextView.setTextColor(getResources().getColor(R.color.login_text_color));
-        hostOwnServerTextView.setVisibility(isProviderOrOwnInstallationVisible ? View.VISIBLE : View.GONE);
+        //hostOwnServerTextView.setVisibility(isProviderOrOwnInstallationVisible ? View.VISIBLE : View.GONE);
 
         progressIndicator = findViewById(R.id.progressIndicator);
         ViewPager viewPager = findViewById(R.id.contentPanel);
