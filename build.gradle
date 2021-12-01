@@ -88,9 +88,9 @@ repositories {
 
 // semantic versioning for version code
 def versionMajor = 3
-def versionMinor = 18
-def versionPatch = 0
-def versionBuild = 52 // 0-50=Alpha / 51-98=RC / 90-99=stable
+def versionMinor = 16
+def versionPatch = 1
+def versionBuild = 90 // 0-50=Alpha / 51-98=RC / 90-99=stable
 
 for (TaskExecutionRequest tr : getGradle().getStartParameter().getTaskRequests()) {
     for (String arg : tr.args) {
@@ -170,20 +170,6 @@ android {
             gplay {
                 applicationId 'com.pluscloudsstash.client'
                 dimension "default"
-            }
-
-            versionDev {
-                applicationId "com.pluscloudsstash.client.beta"
-                dimension "default"
-                versionCode 20210722
-                versionName "20210722"
-            }
-
-            qa {
-                applicationId "com.pluscloudsstash.client.qa"
-                dimension "default"
-                versionCode 1
-                versionName "1"
             }
         }
 
@@ -270,8 +256,8 @@ dependencies {
 //    implementation project('nextcloud-android-library')
     genericImplementation "com.github.nextcloud:android-library:$androidLibraryVersion"
     gplayImplementation "com.github.nextcloud:android-library:$androidLibraryVersion"
-    versionDevImplementation "com.github.nextcloud:android-library:$androidLibraryVersion"
-    qaImplementation "com.github.nextcloud:android-library:$androidLibraryVersion"
+//    versionDevImplementation "com.github.nextcloud:android-library:$androidLibraryVersion"
+//    qaImplementation "com.github.nextcloud:android-library:$androidLibraryVersion"
 
     compileOnly 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2' // remove after entire switch to lib v2
     implementation "commons-httpclient:commons-httpclient:3.1@jar" // remove after entire switch to lib v2

@@ -22,7 +22,7 @@
 
     <!-- URLs and flags related -->
     <bool name="show_server_url_input">false</bool>
-    <bool name="show_provider_or_own_installation">true</bool>
+    <bool name="show_provider_or_own_installation">false</bool>
     <string name="provider_registration_server">https://accounts.plusclouds.com/register</string>
 
     <!-- Flags to enable/disable some features -->
@@ -33,7 +33,7 @@
     <bool name="show_outdated_server_warning">true</bool>
 
     <!-- Contacts backup -->
-    <bool name="contacts_backup">true</bool>
+    <bool name="contacts_backup">false</bool>
     <string name="contacts_backup_folder">/.Contacts-Backup</string>
     <integer name="contacts_backup_expire">-1</integer>
 
@@ -64,21 +64,21 @@
     <bool name="passcode_enabled">true</bool>
     <bool name="device_credentials_enabled">true</bool>
     <bool name="show_hidden_files_enabled">true</bool>
-    <bool name="davdroid_integration_enabled">true</bool>
+    <bool name="davdroid_integration_enabled">false</bool>
     <bool name="help_enabled">true</bool>
-    <string name="url_help">https://help.nextcloud.com/c/clients/android/</string>
+    <string name="url_help">https://plusclouds.com/community</string>
     <bool name="privacy_enabled">true</bool>
-    <string name="privacy_url">https://nextcloud.com/privacy</string>
+    <string name="privacy_url">https://plusclouds.com/privacy</string>
     <bool name="imprint_enabled">false</bool>
     <bool name="recommend_enabled">false</bool>
     <bool name="logger_enabled">false</bool>
     <bool name="sourcecode_enabled">false</bool>
-    <string name="sourcecode_url" translatable="false">https://github.com/nextcloud/android</string>
+    <string name="sourcecode_url" translatable="false">https://github.com/plusclouds/stash-android</string>
     <bool name="license_enabled">true</bool>
     <string name="license_url" translatable="false">https://www.gnu.org/licenses/gpl-2.0.html</string>
     <string name="url_imprint"></string>
-    <string name="url_app_download">"https://play.google.com/store/apps/details?id=com.nextcloud.client"</string>
-    <string name="url_server_install">https://nextcloud.com/install</string>
+    <string name="url_app_download">"https://play.google.com/store/apps/details?id=com.pluscloudsstash.client"</string>
+    <string name="url_server_install">https://stash.plusclouds.com</string>
 
     <!-- synced folder light; if enabled: move to setting & global upload settings -->
     <bool name="syncedFolder_light">false</bool>
@@ -91,7 +91,7 @@
     <string name="mail_logger"></string>
 
     <!-- Determine is participate enabled -->
-    <bool name="participate_enabled">true</bool>
+    <bool name="participate_enabled">false</bool>
     <!-- Participate links -->
     <string name="fdroid_beta_link" translatable="false">https://f-droid.org/repository/browse/?fdid=com.nextcloud.android.beta</string>
     <string name="beta_apk_link" translatable="false">https://download.nextcloud.com/android/dev/latest.apk</string>

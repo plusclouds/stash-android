@@ -28,14 +28,14 @@
         since GET_ACCOUNTS is an special case, the permission is not really needed to access accounts
         owned by the app, our use case.
         See note in http://developer.android.com/intl/es/reference/android/Manifest.permission.html#GET_ACCOUNTS -->
-    <uses-permission
-        android:maxSdkVersion="22"
-        android:name="android.permission.GET_ACCOUNTS" />
+<!--    <uses-permission-->
+<!--        android:maxSdkVersion="22"-->
+<!--        android:name="android.permission.GET_ACCOUNTS" />-->
 
-    <uses-permission
-        android:name="android.permission.READ_CONTACTS" />
-    <uses-permission
-        android:name="android.permission.WRITE_CONTACTS" />
+<!--    <uses-permission-->
+<!--        android:name="android.permission.READ_CONTACTS" />-->
+<!--    <uses-permission-->
+<!--        android:name="android.permission.WRITE_CONTACTS" />-->
 
     <!-- USE_CREDENTIALS, MANAGE_ACCOUNTS and AUTHENTICATE_ACCOUNTS are needed for API <= 22.
         In API >= 23 they do not exist anymore -->
